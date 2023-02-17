@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/png" href="./assets/LogoMD.png">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header>
+        <div class="nombre">
+            <h1>Mighty Ducks Hockey League</h1>
+        </div>
+        <nav>
+           <a href="index.html">Home</a>
+           <a href="about.html">About Us MDHL</a>
+           <a href="contact.html">Contact</a>
+           <a href="gameinfo.html">Game Information</a>
+           <a href="rules.html">Rules</a>
+           <a href="#">Registration Form</a>
+        </nav>
+    </header>
+    <main>
+        <div class="boxpagename">
+            <h2>
+                Registration Form
+            </h2>
+        </div>
+        <aside>
+            <img  id="logo" src="./assets/LogoMD.png" alt="logo MDHL">
+        </aside>
+        <section>
+            <div class="container">
+                <form action="show_data.html" method="get">
+                    <div class="row">
+                            <label>Player's First Name</label>
+                            <input type="text" name="first_name" placeholder="Your First name here">
+                            <label>Last Name</label>
+                            <input type="text" name="last_name" placeholder="Your Last name here">
+                    </div>
+                    <div class="row">
+                        <label>Street Address</label>
+                        <input type="text" name="address" placeholder="Your Address here">
+                    </div>
+                    <div class="row">
+                            <label>City</label>
+                            <input type="text" name="city" placeholder="Your City here">
+                            <label>Zip Code</label>
+                            <input type="number" name="zipcode" placeholder="Your Zip Code here">
+                    </div>
+                    <div class="row">
+                            <label>Birth Date (mm/dd/yyyy)</label>
+                            <input type="date" name="birth">
+                        <div class="column" id="gender">
+                            <p>Gender: </p>
+                            <input type="radio" name="gender" value="F">
+                            <label>Female</label>
+                            <input type="radio" name="gender" value="M">
+                            <label>Male</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column" id="grade">
+                            <p>Grade: </p>
+                            <input type="radio" name="grade" value="pre">
+                            <label>Pre-School</label>
+                            <input type="radio" name="grade" value="1">
+                            <label>1 <sup>st</sup> </label>
+                            <input type="radio" name="grade" value="2">
+                            <label>2 <sup>nd</sup> </label>
+                            <input type="radio" name="grade" value="3">
+                            <label>3 <sup>rd</sup> </label>
+                            <input type="radio" name="grade" value="4">
+                            <label>4 <sup>th</sup> </label>
+                            <input type="radio" name="grade" value="5">
+                            <label>5 <sup>th</sup> </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>Which elementary school do you live near?</p> 
+                        <h5>Closest School:</h5>       
+                        <select name="school" id="school">
+                            <option value="none">-</option>
+                            <option value="aj">AJ Katzenmaier</option> 
+                            <option value="greenb">Greenbay</option>
+                            <option value="how">Howard A Yeager</option>
+                            <option value="marj">Marjorie P Hart</option>
+                            <option value="north">North Elementary</option>
+                            <option value="south">South Elementary</option>
+                        </select>
+                </div>
+                    <div class="row" id="position">
+                            <p>What position(s) do you normally play? (check all that apply)</p>
+                        <div class="column">
+                                <input type="checkbox" name="position" value="forward">
+                                <label>Forward</label>
+                                <input type="checkbox" name="position" value="defense">
+                                <label>Defense</label>
+                        </div>
+                        <div class="column">
+                                <input type="checkbox" name="position" value="mid">
+                                <label>Midfield</label>
+                                <input type="checkbox" name="position" value="goalkeeper">
+                                <label>Goalkeeper</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <p>Uniform Size</p>
+                        <div class="column">
+                            <input type="radio" name="size" value="ys">
+                            <label>Youth Small</label>
+                            <input type="radio" name="size" value="ym">
+                            <label>Youth Medium</label>
+                            <input type="radio" name="size" value="yl">
+                            <label>Youth Large</label>
+                            <input type="radio" name="size" value="s">
+                            <label>Small</label>
+                        </div>
+                        <div class="column">
+                            <input type="radio" name="size" value="m">
+                            <label>Medium</label>
+                            <input type="radio" name="size" value="l">
+                            <label>Large</label>
+                            <input type="radio" name="size" value="xl">
+                            <label>Extra-Large</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>Permission to Play</p>
+                        <p id="agreement">
+                            I, the parent o guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the “League” accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from MDHL sponsored activities, which transportation
+                            By entering your name below, I hereby agree and authorize the above. In addition, by signing below also acknowledge that I have read the cancellation policy and agree to its terms.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <label for="signature">Parent/Guardian Signature:</label>
+                        <input type="text" id="signature" name="signature">
+                        <label>Date:</label>
+                        <input type="text" name="datesign">
+                    </div>
+                    <div id="sub">
+                        <input type="submit" value="Register" id="submit">
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
